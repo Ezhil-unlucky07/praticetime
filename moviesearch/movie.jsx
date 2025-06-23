@@ -63,11 +63,7 @@ export default function MovieSearch() {
        {error && <p style={{ color: 'red' }}>{error}</p>}
 
        <div>
-  {/* {movies
-    .filter((movie) =>
-    (movieyear === movie.Year ? movie.year:'') && 
-    (movietitle===movie.Title ? movie.Title :'')
-    )} */}
+
     {movies.map((movie) => (
       <div style={{margin:"7px"}} key={movie.imdbID}>
          <img src={movie.Poster} alt={movie.Title} height={400} /> 
